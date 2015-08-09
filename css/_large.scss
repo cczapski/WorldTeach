@@ -1,0 +1,32 @@
+@media screen and (min-width: 947px) {
+	#cssmenu ul ul {
+		display: block;
+	}
+
+	.thirds {
+		width: 32%;
+		float: left;
+		margin-left: 2%;
+
+		&:first-of-type {
+			margin-left: 0;
+		}
+	}
+
+	.columns {
+		float: left;
+
+		&:first-of-type {
+			padding-right: 80px;
+		}
+	}
+}
+
+@media screen and (min-width: 1020px) {
+	.hd-volunteers {
+	
+		h1 {
+			padding: 150px;
+		}
+	}
+}

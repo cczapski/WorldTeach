@@ -1,0 +1,22 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+.container {
+	overflow: hidden;
+}
+
+section {
+	overflow: hidden;
+}
+
+.wrapper {
+	overflow: hidden;
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}

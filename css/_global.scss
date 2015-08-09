@@ -1,0 +1,570 @@
+//HEADERS --------------------------------------------------
+.login {
+	float: left;
+	color: white;
+	background: url(../assets/images/texture_white1.png) $lt-aqua;
+	@include border-radius(10px);
+	padding: 5px;
+	margin-top: 10px;
+	margin-left: 15px;
+
+	&:hover {
+		background: url(../assets/images/texture_white1.png) $lt-red;
+	}
+}
+
+.main-nav-wrapper {
+	min-height: 90px;
+}
+
+.main-nav {
+	text-align: right;
+	width: 100%;
+
+	ul {
+		float: right;
+		margin-top: 10px;
+		margin-right: 15px;
+		padding-bottom: 15px;
+	}
+
+	a {
+		font-family: $base-header-font;
+		font-weight: $bold;
+		padding: 10px;
+		@include font(1);
+	}
+
+	li {
+		display: inline-block;
+
+		&:first-of-type {
+			margin-left: 0;
+		}
+	}
+} //end of main-nav
+
+@media screen and (max-width: 392px) {
+	.main-nav {
+		a {
+			@include font(0.75);
+		}
+	}
+}
+
+.logo-wrapper {
+	width: 90%;
+	max-width: 530px;
+	padding: 20px 30px 15px 30px;
+	margin: 0 auto;
+}
+
+.btn-center {
+	max-width: 180px;
+	margin: 0 auto;
+
+	button {
+	 	background: url(../assets/images/texture_white1.png) $lt-red;
+		
+		&:hover {
+	 		background: url(../assets/images/texture_white1.png) $gold;
+		}
+	}
+}
+
+.volunteers-nav {
+	background: $aqua;
+
+	ul {
+		text-align: center;
+	}
+
+	a {
+		color: white;
+		@include font(1.5);
+		
+	}
+}
+
+.selected-nav {
+	 background: url(../assets/images/texture_white1.png) $dk-aqua;
+}
+
+.breadcrumbs {
+	padding: 10px;
+
+	li {
+		display: inline-block;
+
+		&:hover {
+			a {
+				color: $lt-red;
+			}
+		}
+	}
+}
+
+//HOME CONTENT ---------------------------------------------
+
+.hero {
+	overflow: hidden;
+	background: url('http://lorempixel.com/output/people-q-c-1204-480-4.jpg') no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 400px;
+	padding-top: 6em;
+	position: relative;
+
+	.overlay {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		background: $aqua;
+		@include linear-gradient(rgba(83, 203, 190, 0.5), rgba(83, 203, 190, 0.5));
+
+		h1, p {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+
+		h1 {
+			@include font(2.3);
+			line-height: 1.4;
+			text-align: left;
+		}
+
+		p {
+			color: white;
+			max-width: 500px;
+			display: none;
+		}
+	}
+}
+
+@media screen and (min-width: 427px) {
+	.hero {
+		.overlay {
+			p {
+				display: block;
+			}
+		}
+	}
+}
+
+.you-help, .where {
+	padding: 30px;
+}
+
+.you-help {
+	background: $dk-blue;
+	overflow: hidden;
+	color: white;
+
+	h2 {
+		@include font(2);
+		text-transform: none;
+		margin-top: 0;
+	}
+}
+
+.where {
+	overflow: hidden;
+	color: white;
+	text-shadow: 1px 3px 5px $dk-blue;
+	background: url(../assets/images/sky.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	h2 {
+		margin-top: 0;
+		max-width: 650px;
+	}
+}
+
+.users {
+	margin-top: 30px;
+	margin-bottom: 30px;
+
+	li {
+		margin: 3%;
+		@include border-radius(10px);
+		text-align: center;
+
+		a {
+			@include font(1.5);
+			font-weight: $bold;
+			padding: 30px;
+			display: block;
+		}
+
+		&:nth-child(odd) {
+			background: url(../assets/images/texture_white1.png) $gold;
+		}
+
+		&:nth-child(even) {
+			background: url(../assets/images/texture_white2.png) $gold;
+		}
+
+		&:hover {
+			background: url(../assets/images/texture_white2.png) $lt-red;
+			a {
+				color: white;
+			}
+		}
+	}
+}
+
+.blogs {
+	margin: 0 30px 30px 30px;
+
+	button {
+		margin-top: 15px;
+		color: white;
+	}
+}
+
+.two-posts {
+	padding: 0 15px 15px 15px;
+	overflow: hidden;
+}
+
+.post {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+//VOLUNTEERS CONTENT ---------------------------------------------
+.hd-volunteers {
+	background: url(../assets/images/volunteers_header.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	position: relative;
+	
+	h1 {
+		@include font(2.75);
+		padding: 60px 30px;
+	}
+}
+
+.vol-reqs {
+	
+	margin: 0 30px;
+
+	ul {
+		list-style: disc inside;
+
+		li {
+			padding-bottom: 10px;
+		}
+	}
+}
+
+.volunteers-img {
+	margin: 30px;
+
+	img {
+		@include border-radius(10px);
+	}
+}
+
+.research {
+	padding-left: 30px;
+	padding-bottom: 30px;
+	padding-right: 30px;
+	width: 100%;
+
+	h5 {
+		@include font(1.1);
+	}
+
+	li {
+		padding: 15px;
+	}
+}
+
+.research-block {
+	width: 90%;
+	margin: 0 auto;
+
+	button {
+		background: url(../assets/images/texture_white1.png) $lt-aqua;
+		cursor: pointer;
+		margin-bottom: 30px;
+		text-transform: none;
+		font-weight: $regular;
+
+		&:hover {
+			background: url(../assets/images/texture_white1.png) $pink;
+		}
+	}
+}
+
+.app-deadlines {
+	border: 4px solid $pink;
+	@include border-radius(10px);
+	padding: 15px;
+	max-width: 365px;
+	margin: 0 auto;
+
+	.apply {
+		max-width: 100px;
+		padding: 10px;
+		text-align: center;
+		margin: 0 auto;
+	}
+}
+
+//DESTINATION CONTENT ---------------------------------------------
+.map {
+	h1 {
+		color: $dk-blue;
+		text-shadow: none;
+		padding: 15px 0;
+	}
+}
+
+.i4ewOd-pzNkMb-nK2kYb {
+	display: none;
+}
+
+.country-photo {
+	@include border-radius(10px);
+	min-height: 250px;
+	max-width: 500px;
+	background-size: cover;
+	background-position: center;
+	margin: 15px;
+	text-align: center;
+	padding-top: 100px;
+
+	a {
+		color: white;
+		@include shadow($dk-blue);
+		@include font(1.5);
+		padding: 100px 15px;
+	}
+}
+
+@media screen and (min-width: 530px) {
+	.country-photo {
+		margin: 15px auto;
+	}
+}
+
+.american-samoa-img {
+	background: url(../assets/images/american_samoa_ctry.jpg);
+}
+
+.bangladesh-img {
+	background: url(../assets/images/bangladesh_ctry.jpg);
+}
+
+.chile-img {
+	background: url(../assets/images/chile_ctry.jpg);
+}
+
+.china-img {
+	background: url(../assets/images/china_ctry.JPG);
+}
+
+.colombia-img {
+	background: url(../assets/images/colombia_ctry.jpg);
+}
+
+.costa-rica-img {
+	background: url(../assets/images/costa_rica_ctry.jpg);
+}
+
+.ecuador-img {
+	background: url(../assets/images/ecuador_ctry.jpg);
+}
+
+.guyana-img {
+	background: url(../assets/images/guyana_ctry.JPG);
+}
+
+.haiti-img {
+	background: url(../assets/images/haiti_ctry.jpg);
+}
+
+.marshall-islands-img {
+	background: url(../assets/images/marshall_islands_ctry.jpg);
+}
+
+.micronesia-img {
+	background: url(../assets/images/micronesia_ctry.JPG);
+}
+
+.morocco-img {
+	background: url(../assets/images/morocco_ctry.jpg);
+}
+
+.namibia-img {
+	background: url(../assets/images/namibia_ctry.JPG);
+}
+
+.nepal-img {
+	background: url(../assets/images/nepal_ctry.jpg);
+}
+
+.poland-img {
+	background: url(../assets/images/poland_ctry.jpg);
+}
+
+.south-africa-img {
+	background: url(../assets/images/south_africa_ctry.jpg);
+}
+
+.thailand-img {
+	background: url(../assets/images/thailand_ctry.jpg);
+}
+
+//COSTA RICA CONTENT ---------------------------------------------
+.country-nav {
+	display: none;
+	background: url(../assets/images/texture_white1.png) $gold;
+}
+
+.country-section {
+	overflow: hidden;
+
+	ul {
+		list-style: disc inside;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		margin-right: 15px;
+	}
+}
+
+.country-content {
+	overflow: hidden;
+
+	.apply {
+		margin-right: 15px;
+	}
+}
+
+.country-header-img {
+	background: url(../assets/images/costa_rica_header.jpg);
+	background-size: cover;
+	background-position: center;
+	padding: 6em;
+}
+
+.country-block {
+	margin: 0 30px 30px 30px;	
+	overflow: hidden;
+}
+
+.ctry-content-img {
+	margin: 30px 30px 30px 0;
+
+	img {
+		@include border-radius(10px);
+	}
+}
+
+.ctry-content-video {
+	button {
+			margin-top: 15px;
+		}
+}
+
+.video {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.back {
+	text-align: center;
+	margin: 0 30px 30px 30px;
+
+	a {
+		@include font(1.5);
+		font-weight: $bold;
+
+		&:hover {
+			color: $lt-red;
+		}
+	}
+}
+
+//FOOTER ----------------------------------------------------
+footer {
+	background: $aqua;
+
+	h5 {
+		color: white;
+		margin-bottom: 15px;
+	}
+
+	li {
+		margin-bottom: 15px;
+	}
+
+	a {
+		color: white;
+		@include font(1.111);
+
+		
+	}
+}
+
+.social-icons {
+	float: left;
+	margin-right: 15px;
+}
+
+.center-icons {
+	margin: 0 auto;
+	width: 90%;
+}
+
+
+
+//CSS Menu
+
+/* Base Styles */
+
+#cssmenu {
+	padding: 20px;
+}
+
+#cssmenu > ul > li > a {
+	display: block;
+	font-family: $base-header-font;
+	font-weight: $base-header-weight;
+	line-height: $base-header-lheight;
+	text-transform: uppercase;
+	@include font(1.222);
+	padding-bottom: 15px;
+}
+
+#cssmenu > ul > li > a > span {
+  display: block;
+}
+
+#cssmenu > ul > li.has-sub > a span {
+  background: url(../menu_images/icon_plus.png) 96% center no-repeat;
+}
+#cssmenu > ul > li.has-sub.active > a span {
+  background: url(../menu_images/icon_minus.png) 96% center no-repeat;
+}
+
+#cssmenu ul ul {
+  display: none;
+  overflow: hidden;
+}
+
+#cssmenu ul ul a {
+  display: block;
+  &:hover {
+			border-bottom: 3px solid $lt-red;
+		}
+}
+

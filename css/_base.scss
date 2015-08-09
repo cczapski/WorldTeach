@@ -1,0 +1,269 @@
+$border: 2px dashed red;
+
+img {
+	max-width: 100%;
+}
+
+//TYPE -----------------------------------------------------
+@mixin font($em){
+	font-size: ($em*18) + px;
+	font-size: ($em) + em;
+}
+
+$base-font-size: 1;
+$base-font-color: $dk-blue;
+
+$base-font-family: "signo", Helvetica, sans-serif;
+$base-line-height: 1.7;
+$base-font-weight: 300;
+$bold: 700;
+$regular: 300;
+$light: 200;
+
+$base-header-font: "signo", Helvetica, sans-serif;
+$base-header-lheight: 1.5;
+$base-header-weight: 700;
+
+$signo: "signo", Helvetica, sans-serif;
+// $alverata: "alverata-informal-pe", Helvetica, sans-serif; 
+
+@mixin shadow($color) {
+	text-shadow: 1px 3px 5px $color;
+} 
+
+body {
+	@include font(1);
+	font-family: $base-font-family;
+	line-height: $base-line-height;
+	color: $base-font-color;
+}
+
+//HEADERS
+
+h1, h2, h3, h4, h5 {
+	font-family: $base-header-font;
+	font-weight: $base-header-weight;
+	line-height: $base-header-lheight;
+	text-transform: uppercase;
+}
+
+h1 {
+	@include font(3);
+	color: white;
+	@include shadow($dk-blue);
+	text-align: center;
+}
+
+h2 {
+	@include font(2.222);
+	margin-top: 30px;
+}
+
+h3, h4 {
+	@include font(1.333);
+	margin-top: 30px;
+}
+
+h4 {
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+h5 {
+	@include font(1.222);
+}
+
+// h6 {
+// 	@include font(3.333);
+// }
+
+p {
+	margin-bottom: 10px;
+	padding-right: 15px;
+}
+
+a {
+	text-decoration: none;
+	color: $base-font-color;
+}
+
+//STYLES -----------------------------------------------------
+
+@mixin border-radius($px) {
+	-webkit-border-radius: ($px);
+	   -moz-border-radius: ($px);
+		-ms-border-radius: ($px);
+		 -o-border-radius: ($px);
+			border-radius: ($px);
+}
+
+@mixin border-radius-bottom-right($px) {
+	-webkit-border-radius: 0 0 $px 0;
+	   -moz-border-radius: 0 0 $px 0;
+		-ms-border-radius: 0 0 $px 0;
+		 -o-border-radius: 0 0 $px 0;
+			border-radius: 0 0 $px 0;
+}
+
+@mixin border-radius-right-corners($px) {
+	-webkit-border-radius: 0 $px $px 0;
+	   -moz-border-radius: 0 $px $px 0;
+		-ms-border-radius: 0 $px $px 0;
+		 -o-border-radius: 0 $px $px 0;
+			border-radius: 0 $px $px 0;
+}
+
+@mixin border-radius-left-corners($px) {
+	-webkit-border-radius: $px 0 0 $px;
+	   -moz-border-radius: $px 0 0 $px;
+		-ms-border-radius: $px 0 0 $px;
+		 -o-border-radius: $px 0 0 $px;
+			border-radius: $px 0 0 $px;
+}
+
+.dots {
+	width: 100%;
+	display: inline-block;
+	padding-bottom: 4px;
+	border-width: 10px;
+	-webkit-border-image: url("../assets/images/border_image_aqua.png") 0 0 50 repeat;
+	   -moz-border-image: url("../assets/images/border_image_aqua.png") 0 0 50 repeat;
+		-ms-border-image: url("../assets/images/border_image_aqua.png") 0 0 50 repeat;
+		 -o-border-image: url("../assets/images/border_image_aqua.png") 0 0 50 repeat;
+			border-image: url("../assets/images/border_image_aqua.png") 0 0 50 repeat;
+}
+
+.dots-box {
+	border-width: 7px;
+	border-image: url("../assets/images/border_image_box.png") 0 0 100 repeat;
+}
+
+.author {
+	color: $md-blue;
+}
+
+.date {
+	color: $aqua;
+}
+
+.link {
+	border-bottom: 3px solid $aqua;
+	font-weight: $bold;
+	color: $md-blue;
+	cursor: pointer;
+
+	&:hover {
+		border-bottom: 3px solid $lt-red;
+		color: $lt-red;
+	}
+}
+
+.link-photo {
+	border-bottom: 3px solid $aqua;
+	font-weight: $regular;
+	color: white;
+	@include shadow($dk-blue);
+
+	&:hover {
+		border-bottom: 3px solid $lt-red;
+		color: $lt-red;
+	}
+}
+
+.photo-description {
+	@include font(0.899);
+	text-align: center;
+	color: $md-blue;
+}
+
+.bc-current {
+	color: $md-blue;
+}
+
+.arrow {
+	@include font(1.2);
+}
+
+.bold {
+	font-weight: $bold;
+}
+
+.margin-top {
+		margin-top: 30px;
+	}
+
+//BUTTONS -----------------------------------------------------
+.apply, .donate {
+	@include border-radius(50%);
+	font-weight: $bold;	
+
+	a {
+		color: white;
+	}
+
+	&:hover {
+		background: url(../assets/images/texture_white1.png) $aqua;
+	}
+}
+
+.apply {
+	background: url(../assets/images/texture_white1.png) $gold;
+	padding: 10px 17px;
+}
+
+.donate {
+	background: url(../assets/images/texture_white2.png) $lt-red;
+	padding: 10px;
+}
+
+button {
+	@include border-radius(10px);
+	border: 0;
+	font-family: $signo;
+	font-weight: $bold;
+	text-transform: uppercase;
+	@include font(1.111);
+
+	a {
+		color: white;
+		padding: 10px 15px;
+		display: block;
+	}
+}
+
+.btn1:hover,
+.btn2:hover {
+	background: url(../assets/images/texture_white1.png) $lt-red;
+}
+
+.btn1 {
+	background: url(../assets/images/texture_white1.png) $aqua;
+}
+
+.btn2 {
+	background: url(../assets/images/texture_white2.png) $aqua;
+}
+
+//FOOTER
+
+.social-btn1, .social-btn2 {
+	font-family: $signo;
+	font-weight: $light;
+	text-transform: none;
+	@include font(1.111);
+	margin-bottom: 15px;
+	text-align: center;	
+
+	&:hover {
+		background: url(../assets/images/texture_aqua1.png) $lt-red;
+	}
+}
+
+.social-btn1 {
+	background: url(../assets/images/texture_aqua1.png) $gold;
+}
+
+.social-btn2 {
+	background: url(../assets/images/texture_aqua2.png) $gold;
+}
+
