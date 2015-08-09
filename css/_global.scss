@@ -46,8 +46,18 @@
 
 @media screen and (max-width: 392px) {
 	.main-nav {
+		ul {
+			margin-right: 0;
+			margin-left: 0;
+		}
+
 		a {
-			@include font(0.75);
+			@include font(0.85);
+			font-weight: $regular;
+		}
+
+		.oval {
+			padding: 0;
 		}
 	}
 }

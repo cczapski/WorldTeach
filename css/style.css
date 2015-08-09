@@ -271,9 +271,15 @@ section {
       margin-left: 0; }
 
 @media screen and (max-width: 392px) {
+  .main-nav ul {
+    margin-right: 0;
+    margin-left: 0; }
   .main-nav a {
-    font-size: 13.5px;
-    font-size: 0.75em; } }
+    font-size: 15.3px;
+    font-size: 0.85em;
+    font-weight: 300; }
+  .main-nav .oval {
+    padding: 0; } }
 .logo-wrapper {
   width: 90%;
   max-width: 530px;
