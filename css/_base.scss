@@ -133,11 +133,6 @@ a {
 			border-image: url("../assets/images/border_image_aqua.png") 0 0 50 repeat;
 }
 
-.dots-box {
-	border-width: 7px;
-	border-image: url("../assets/images/border_image_box.png") 0 0 100 repeat;
-}
-
 .author {
 	color: $md-blue;
 }
@@ -216,13 +211,14 @@ a {
 	padding: 10px;
 }
 
-button {
+.btn {
 	@include border-radius(10px);
 	border: 0;
 	font-family: $signo;
 	font-weight: $bold;
 	text-transform: uppercase;
 	@include font(1.111);
+	text-align: center;
 
 	a {
 		color: white;

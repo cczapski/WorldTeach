@@ -1,3 +1,10 @@
+@media screen and (min-width: 912px) {
+		.you-help, .where {
+			min-height: 0;
+			height: 250px;
+		}
+	}
+
 @media screen and (min-width: 947px) {
 	#cssmenu ul ul {
 		display: block;

@@ -32,20 +32,20 @@
 		}
 	}
 
-	@media screen and (min-width: 790px) {
-		.hero {
-			.overlay {
-				h1 {
-					@include font(2.85);
-					line-height: $base-header-lheight;
-				}
-			}
-		}
-	}
+	// @media screen and (min-width: 790px) {
+	// 	.hero {
+	// 		.overlay {
+	// 			h1 {
+	// 				@include font(2.85);
+	// 				line-height: $base-header-lheight;
+	// 			}
+	// 		}
+	// 	}
+	// }
 	
 	//home -------------------------------------------- 
 	.you-help, .where {
-		min-height: 290px;
+		min-height: 355px;
 	}
 
 	.you-help {
@@ -61,7 +61,7 @@
 	@media screen and (min-width: 708px) {
 		.you-help, .where {
 			min-height: 0;
-			height: 260px;
+			height: 290px;
 		}
 	}
 
@@ -154,8 +154,8 @@
 
 	.app-deadlines {
 		float: left;
-		width: 45%;
-		margin-left: 5%;
+		margin-left: 6%;
+		width: 47%;
 	}
 
 	//destinations page --------------------------------------------
@@ -228,6 +228,7 @@
 
 	.no-dots {
 		border: none;
+		max-width: 1800px;
 	}
 
 	.volunteers-nav {

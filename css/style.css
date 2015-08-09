@@ -105,10 +105,6 @@ a {
   -o-border-image: url("../assets/images/border_image_aqua.png") 0 0 50 repeat;
   border-image: url("../assets/images/border_image_aqua.png") 0 0 50 repeat; }
 
-.dots-box {
-  border-width: 7px;
-  border-image: url("../assets/images/border_image_box.png") 0 0 100 repeat; }
-
 .author {
   color: #7A7B8C; }
 
@@ -172,7 +168,7 @@ a {
   background: url(../assets/images/texture_white2.png) #F36674;
   padding: 10px; }
 
-button {
+.btn {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -183,8 +179,9 @@ button {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 19.998px;
-  font-size: 1.111em; }
-  button a {
+  font-size: 1.111em;
+  text-align: center; }
+  .btn a {
     color: white;
     padding: 10px 15px;
     display: block; }
@@ -284,9 +281,9 @@ section {
 .btn-center {
   max-width: 180px;
   margin: 0 auto; }
-  .btn-center button {
+  .btn-center .btn {
     background: url(../assets/images/texture_white1.png) #F36674; }
-    .btn-center button:hover {
+    .btn-center .btn:hover {
       background: url(../assets/images/texture_white1.png) #F9AB3C; }
 
 .volunteers-nav {
@@ -327,8 +324,7 @@ section {
     background-image: -webkit-linear-gradient(rgba(83, 203, 190, 0.5), rgba(83, 203, 190, 0.5));
     background-image: linear-gradient(rgba(83, 203, 190, 0.5), rgba(83, 203, 190, 0.5)); }
     .hero .overlay h1, .hero .overlay p {
-      padding-left: 30px;
-      padding-right: 30px; }
+      padding: 30px; }
     .hero .overlay h1 {
       font-size: 41.4px;
       font-size: 2.3em;
@@ -336,12 +332,16 @@ section {
       text-align: left; }
     .hero .overlay p {
       color: white;
-      max-width: 500px;
-      display: none; }
+      max-width: 550px;
+      display: none;
+      padding-bottom: 30px; }
 
-@media screen and (min-width: 427px) {
+@media screen and (min-width: 650px) {
+  .hero .overlay h1 {
+    padding: 30px 30px 15px 30px; }
   .hero .overlay p {
-    display: block; } }
+    display: block;
+    padding: 0 30px 30px 30px; } }
 .you-help, .where {
   padding: 30px; }
 
@@ -388,13 +388,13 @@ section {
     .users li:nth-child(even) {
       background: url(../assets/images/texture_white2.png) #F9AB3C; }
     .users li:hover {
-      background: url(../assets/images/texture_white2.png) #F36674; }
+      background: url(../assets/images/texture_white2.png) 50%, #F36674; }
       .users li:hover a {
         color: white; }
 
 .blogs {
   margin: 0 30px 30px 30px; }
-  .blogs button {
+  .blogs .btn {
     margin-top: 15px;
     color: white; }
 
@@ -446,14 +446,17 @@ section {
 
 .research-block {
   width: 90%;
-  margin: 0 auto; }
-  .research-block button {
+  margin: 15px auto; }
+  .research-block h5 {
+    line-height: 1.8; }
+  .research-block .btn {
     background: url(../assets/images/texture_white1.png) #98E0D8;
     cursor: pointer;
     margin-bottom: 30px;
     text-transform: none;
-    font-weight: 300; }
-    .research-block button:hover {
+    font-weight: 300;
+    max-width: 50%; }
+    .research-block .btn:hover {
       background: url(../assets/images/texture_white1.png) #F8A3AC; }
 
 .app-deadlines {
@@ -464,8 +467,8 @@ section {
   -o-border-radius: 10px;
   border-radius: 10px;
   padding: 15px;
-  max-width: 365px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 525px; }
   .app-deadlines .apply {
     max-width: 100px;
     padding: 10px;
@@ -571,7 +574,15 @@ section {
 .country-content {
   overflow: hidden; }
   .country-content .apply {
-    margin-right: 15px; }
+    margin-right: 15px;
+    margin-bottom: 15px;
+    max-width: 100px;
+    text-align: center;
+    text-transform: uppercase; }
+  .country-content .btn {
+    max-width: 200px; }
+  .country-content .apply, .country-content .btn {
+    display: inline-block; }
 
 .country-header-img {
   background: url(../assets/images/costa_rica_header.jpg);
@@ -592,7 +603,7 @@ section {
     -o-border-radius: 10px;
     border-radius: 10px; }
 
-.ctry-content-video button {
+.ctry-content-video .btn {
   margin-top: 15px; }
 
 .video {
@@ -681,15 +692,10 @@ footer {
     margin: 0 0 30px 0; } }
 @media screen and (min-width: 665px) {
   .main-nav li {
-    margin-left: 20px; } }
-@media screen and (min-width: 665px) and (min-width: 790px) {
-  .hero .overlay h1 {
-    font-size: 51.3px;
-    font-size: 2.85em;
-    line-height: 1.5; } }
-@media screen and (min-width: 665px) {
+    margin-left: 20px; }
+
   .you-help, .where {
-    min-height: 290px; }
+    min-height: 355px; }
 
   .you-help {
     width: 37.5%;
@@ -701,7 +707,7 @@ footer {
 @media screen and (min-width: 665px) and (min-width: 708px) {
   .you-help, .where {
     min-height: 0;
-    height: 260px; } }
+    height: 290px; } }
 @media screen and (min-width: 665px) {
   .users {
     overflow: hidden; }
@@ -758,8 +764,8 @@ footer {
 
   .app-deadlines {
     float: left;
-    width: 45%;
-    margin-left: 5%; }
+    margin-left: 6%;
+    width: 47%; }
 
   .countries {
     overflow: hidden;
@@ -809,7 +815,8 @@ footer {
     float: left; } }
 @media screen and (min-width: 815px) {
   .no-dots {
-    border: none; }
+    border: none;
+    max-width: 1800px; }
 
   .volunteers-nav ul {
     text-align: center; }
@@ -829,6 +836,10 @@ footer {
     text-align: center;
     font-size: 18px;
     font-size: 1em; } }
+@media screen and (min-width: 912px) {
+  .you-help, .where {
+    min-height: 0;
+    height: 250px; } }
 @media screen and (min-width: 947px) {
   #cssmenu ul ul {
     display: block; }
