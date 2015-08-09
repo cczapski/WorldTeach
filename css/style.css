@@ -203,9 +203,11 @@ a {
   font-size: 19.998px;
   font-size: 1.111em;
   margin-bottom: 15px;
-  text-align: center; }
+  text-align: center;
+  max-width: 290px; }
   .social-btn1:hover, .social-btn2:hover {
-    background: url(../assets/images/texture_aqua1.png) #F36674; }
+    background: url(../assets/images/texture_aqua1.png) #F36674;
+    border-bottom: none; }
 
 .social-btn1 {
   background: url(../assets/images/texture_aqua1.png) #F9AB3C; }
@@ -857,7 +859,17 @@ footer {
       padding-right: 80px; } }
 @media screen and (min-width: 1020px) {
   .hd-volunteers h1 {
-    padding: 150px; } }
+    padding: 150px; }
+
+  .country-nav {
+    width: 20%; }
+
+  .country-section {
+    width: 80%; }
+
+  .country-content {
+    max-width: 830px;
+    margin: 0 auto; } }
 /*! responsive-nav.js 1.0.39 by @viljamis */
 .nav-collapse ul {
   max-width: 817px;
