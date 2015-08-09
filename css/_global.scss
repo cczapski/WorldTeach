@@ -343,12 +343,20 @@
 	h1 {
 		color: $dk-blue;
 		text-shadow: none;
-		padding: 15px 0;
+		padding: 30px 0;
 	}
 }
 
-.i4ewOd-pzNkMb-nK2kYb {
-	display: none;
+.maps iframe {
+	pointer-events: none;
+}
+
+// .i4ewOd-pzNkMb-nK2kYb {
+// 	display: none;
+// }
+
+.countries {
+	margin-bottom: 30px;
 }
 
 .country-photo {
