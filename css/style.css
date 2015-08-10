@@ -280,7 +280,7 @@ section {
     .main-nav li:first-of-type {
       margin-left: 0; }
 
-@media screen and (max-width: 392px) {
+@media screen and (max-width: 407px) {
   .main-nav ul {
     margin-right: 0;
     margin-left: 0; }
