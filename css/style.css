@@ -663,6 +663,9 @@ footer {
   margin: 0 auto;
   width: 90%; }
 
+.social-row {
+  width: 90%; }
+
 /* Base Styles */
 #cssmenu {
   padding: 20px; }
@@ -896,7 +899,10 @@ footer {
       padding-right: 80px; }
 
   #map {
-    height: 500px; } }
+    height: 500px; }
+
+  .social-row {
+    margin: 0 auto; } }
 @media screen and (min-width: 1020px) {
   .hd-volunteers h1 {
     padding: 150px; }

@@ -7,7 +7,7 @@
     
     $('#cssmenu li').removeClass('active');
     $(this).closest('li').addClass('active'); 
-    $(".center-icons").css("display", "block");
+    $(".second-section").css("display", "block");
     
     if((checkElement.is('ul')) && (checkElement.is(':visible'))) {
       $(this).closest('li').removeClass('active');
