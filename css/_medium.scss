@@ -223,6 +223,14 @@
 
 } //end of media query
 
+@media screen and (min-width: 700px) {
+	.map {
+		h1 {
+			@include font(3);
+		}
+	}
+}
+
 //VOLUNTEERS RESPONSIVE NAV STYLING ------------------------
 @media screen and (min-width: 815px) {
 

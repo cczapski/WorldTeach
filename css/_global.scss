@@ -344,11 +344,13 @@
 		color: $dk-blue;
 		text-shadow: none;
 		padding: 30px 0;
+		@include font(2);
 	}
 }
 
-.maps iframe {
-	pointer-events: none;
+#map { 
+	height: 400px;
+	width: 100%;
 }
 
 .countries {

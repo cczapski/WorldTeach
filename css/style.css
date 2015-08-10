@@ -495,10 +495,13 @@ section {
 .map h1 {
   color: #20253F;
   text-shadow: none;
-  padding: 30px 0; }
+  padding: 30px 0;
+  font-size: 36px;
+  font-size: 2em; }
 
-.maps iframe {
-  pointer-events: none; }
+#map {
+  height: 400px;
+  width: 100%; }
 
 .countries {
   margin-bottom: 30px; }
@@ -838,6 +841,10 @@ footer {
   .country-section {
     width: 75%;
     float: left; } }
+@media screen and (min-width: 700px) {
+  .map h1 {
+    font-size: 54px;
+    font-size: 3em; } }
 @media screen and (min-width: 815px) {
   .no-dots {
     border: none;
@@ -883,7 +890,11 @@ footer {
   .columns {
     float: left; }
     .columns:first-of-type {
-      padding-right: 80px; } }
+      padding-right: 80px; }
+
+  #map {
+    height: 500px;
+    width: 100%; } }
 @media screen and (min-width: 1020px) {
   .hd-volunteers h1 {
     padding: 150px; }
