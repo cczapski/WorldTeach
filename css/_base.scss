@@ -153,6 +153,17 @@ a {
 	}
 }
 
+.link2 {
+	border-bottom: 3px solid $aqua;
+	margin-left: 15px;
+	font-style: italic;
+
+	&:hover {
+		border-bottom: 3px solid $lt-red;
+		color: $lt-red;
+	}
+}
+
 .link-photo {
 	border-bottom: 3px solid $aqua;
 	font-weight: $regular;

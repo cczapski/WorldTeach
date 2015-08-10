@@ -120,6 +120,14 @@ a {
     border-bottom: 3px solid #F36674;
     color: #F36674; }
 
+.link2 {
+  border-bottom: 3px solid #53CBBE;
+  margin-left: 15px;
+  font-style: italic; }
+  .link2:hover {
+    border-bottom: 3px solid #F36674;
+    color: #F36674; }
+
 .link-photo {
   border-bottom: 3px solid #53CBBE;
   font-weight: 300;
@@ -527,7 +535,7 @@ section {
   background: url(../assets/images/chile_ctry.jpg); }
 
 .china-img {
-  background: url(../assets/images/china_ctry.JPG); }
+  background: url(../assets/images/china_ctry.jpg); }
 
 .colombia-img {
   background: url(../assets/images/colombia_ctry.jpg); }
