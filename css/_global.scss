@@ -260,7 +260,7 @@
 	position: relative;
 	
 	h1 {
-		@include font(2.75);
+		@include font(2);
 		padding: 60px 30px;
 	}
 }
@@ -498,6 +498,10 @@
 .country-block {
 	margin: 0 30px 30px 30px;	
 	overflow: hidden;
+
+	&:first-of-type {
+		margin: 30px;
+	}
 }
 
 .ctry-content-img {
