@@ -1,15 +1,13 @@
-$(document).ready(function(){
 
- $(window).resize(function(){
-  if ($(window).width() <= 550){  
+
     $('#cssmenu > ul > li:has(ul)').addClass("has-sub");
 
-  $('#cssmenu > ul > li > a').click(function() {
+    $('#cssmenu > ul > li > a').click(function() {
     var checkElement = $(this).next();
     
     $('#cssmenu li').removeClass('active');
     $(this).closest('li').addClass('active'); 
-    
+    $(".center-icons").css("display", "block");
     
     if((checkElement.is('ul')) && (checkElement.is(':visible'))) {
       $(this).closest('li').removeClass('active');
@@ -28,34 +26,20 @@ $(document).ready(function(){
     }   
   });
 
-  } 
-});
+// if ($(window).width() >= 947){  
+//         $(".thirds a").removeAttr('href');
+//   } 
+    
+
+// $(window).resize(function(){
+//   if ($(window).width() >= 947){  
+//         $(".thirds span").css("background-image", "none");
+//   } 
+//   else if ($(window).width() < 947 ){
+//     $(".thirds span").css("background-image", "../menu_images/icon_plus.png");
+//   }
+// });
 
 $('.maps').click(function () {
     $('.maps iframe').css("pointer-events", "auto");
 });
-
-// Disable scroll zooming and bind back the click event
-var onMapMouseleaveHandler = function (event) {
-  var that = $(this);
-
-  that.on('click', onMapClickHandler);
-  that.off('mouseleave', onMapMouseleaveHandler);
-  that.find('iframe').css("pointer-events", "none");
-}
-
-var onMapClickHandler = function (event) {
-  var that = $(this);
-
-  // Disable the click handler until the user leaves the map area
-  that.off('click', onMapClickHandler);
-
-  // Enable scrolling zoom
-  that.find('iframe').css("pointer-events", "auto");
-
-  // Handle the mouse leave event
-  that.on('mouseleave', onMapMouseleaveHandler);
-}
-
-// Enable map zooming with mouse scroll when the user clicks the map
-$('.maps.embed-container').on('click', onMapClickHandler);

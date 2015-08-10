@@ -20,6 +20,11 @@
 		}
 	}
 
+	#cssmenu > ul > li.has-sub > a span {
+		background: $aqua;
+		cursor: default;
+	}
+
 	.columns {
 		float: left;
 

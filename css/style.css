@@ -99,6 +99,7 @@ a {
   display: inline-block;
   padding-bottom: 4px;
   border-width: 10px;
+  border-style: inherit;
   -webkit-border-image: url("../assets/images/border_image_aqua.png") 0 0 50 repeat;
   -moz-border-image: url("../assets/images/border_image_aqua.png") 0 0 50 repeat;
   -ms-border-image: url("../assets/images/border_image_aqua.png") 0 0 50 repeat;
@@ -677,10 +678,10 @@ footer {
   display: block; }
 
 #cssmenu > ul > li.has-sub > a span {
-  background: url(../menu_images/icon_plus.png) 96% center no-repeat; }
+  background: url("../menu_images/icon_plus.png") 96% center no-repeat; }
 
 #cssmenu > ul > li.has-sub.active > a span {
-  background: url(../menu_images/icon_minus.png) 96% center no-repeat; }
+  background: url("../menu_images/icon_minus.png") 96% center no-repeat; }
 
 #cssmenu ul ul {
   display: none;
@@ -689,7 +690,12 @@ footer {
 #cssmenu ul ul a {
   display: block; }
   #cssmenu ul ul a:hover {
-    border-bottom: 3px solid #F36674; }
+    border-bottom: 3px solid #F36674;
+    display: inline; }
+
+#cssmenu ul ul a.no-underline:hover {
+  display: block;
+  border-bottom: 0; }
 
 @media screen and (min-width: 560px) {
   .country-text, .ctry-content-img, .ctry-content-video {
@@ -869,6 +875,10 @@ footer {
     margin-left: 2%; }
     .thirds:first-of-type {
       margin-left: 0; }
+
+  #cssmenu > ul > li.has-sub > a span {
+    background: #53CBBE;
+    cursor: default; }
 
   .columns {
     float: left; }

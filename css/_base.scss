@@ -126,6 +126,7 @@ a {
 	display: inline-block;
 	padding-bottom: 4px;
 	border-width: 10px;
+	border-style: inherit;
 	-webkit-border-image: url("../assets/images/border_image_aqua.png") 0 0 50 repeat;
 	   -moz-border-image: url("../assets/images/border_image_aqua.png") 0 0 50 repeat;
 		-ms-border-image: url("../assets/images/border_image_aqua.png") 0 0 50 repeat;
