@@ -837,7 +837,7 @@ footer {
   .map h1 {
     font-size: 54px;
     font-size: 3em; } }
-@media screen and (min-width: 815px) {
+@media screen and (min-width: 823px) {
   .no-dots {
     border: none;
     max-width: 1800px; }
