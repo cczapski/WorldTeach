@@ -39,7 +39,7 @@
 * Day 13: Coding
 * Day 14: Presentation Prep
 
-Presenation: Tuesday, August 11th @ 9 am
+Instructor Presenation: Tuesday, August 11th @ 9 am
 
 ## History & Intro 
 WorldTeach is a non-profit organization that pairs volunteers with partner countries throughout the world to teach for summer, semester, and year-long teaching sessions that cater towards the needs of the local community and promote responsible global citizenship.
