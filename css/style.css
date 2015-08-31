@@ -981,16 +981,8 @@ footer {
   text-align: right; }
 
 .nav-toggle span {
-  color: #F36674;
-  font-size: 36px;
-  font-size: 2em;
-  border: 3px solid #F36674;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
-  padding: 0 5px; }
+  padding: 10px 25px;
+  background: url(../assets/icons/hamburger.png) no-repeat; }
 
 @media screen and (min-width: 823px) {
   .js .nav-collapse {

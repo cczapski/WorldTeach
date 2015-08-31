@@ -52,14 +52,12 @@
   display: block;
   text-decoration: none;
   text-align: right;
+    
 }
 
 .nav-toggle span {
-  color: $lt-red;
-  @include font(2);
-  border: 3px solid $lt-red;
-  @include border-radius(10px);
-  padding: 0 5px;
+  padding: 10px 25px;
+  background: url(../assets/icons/hamburger.png) no-repeat;
 }
 
 @media screen and (min-width: 823px) {
